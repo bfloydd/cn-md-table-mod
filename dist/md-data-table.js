@@ -847,7 +847,7 @@ angular.module('templates.md-data-table-pagination.html', []).run(['$templateCac
     '<div>\n' +
     '  <span class="label">{{paginationLabel.text}}</span>\n' +
     '  <md-select ng-model="limit" md-container-class="md-pagination-select" ng-change="onSelect()" aria-label="Row Count" placeholder="{{rowSelect ? rowSelect[0] : 5}}">\n' +
-    '    <md-option ng-repeat="rows in rowSelect ? rowSelect : [5, 10, 15]" ng-value="rows">{{rows}}</md-option>\n' +
+    '    <md-option ng-repeat="rows in rowSelect ? rowSelect : [5, 10, 20, 1000]" ng-value="rows">{{rows}}</md-option>\n' +
     '  </md-select>\n' +
     '  <span>{{min()}} - {{max()}} {{paginationLabel.of}} {{total}}</span>\n' +
     '</div>\n' +
